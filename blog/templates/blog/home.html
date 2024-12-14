@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bharat Club Clone{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'blog/styles.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    {% block content %}
+    <header>
+        <div class="container">
+            <h1 class="logo">Bharat Club</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="services" class="hero">
+        <div class="container">
+            <h2>Welcome to Bharat Club</h2>
+            <p>Explore engaging content and connect with a vibrant community.</p>
+            <div class="service-list">
+                
+                <div class="service">
+                    <a href="#about">
+                        <h3>Play Tiranga Game</h3>
+                    </a>
+                    <a href="https://example.com" target="_blank">
+                        <img src="{% static 'blog/images/Tiranga_game.jpg' %}" alt="Clickable Image">
+                    </a>
+                    <p>Join our community events and discussions.</p>
+                </div>
+
+                <div class="service">
+                    <a href="https://bharatclub.bet/#/register?invitationCode=424272527584">
+                        <h3>Play Bharat Club Game</h3>
+                    </a>
+                    <a href="https://bharatclub.bet/#/register?invitationCode=424272527584">
+                        <img src="{% static 'blog/images/Bharat_Club.jpg' %}" alt="Clickable Image">
+                    </a>
+                    <p>Explore creative and inspiring content.</p>
+                </div>
+
+                <div class="service">
+                    <a href="#about">
+                        <h3>Play Daman Game</h3>
+                    </a>
+                    <a href="https://example.com" target="_blank">
+                        <img src="{% static 'blog/images/daman2.jpg' %}" alt="Clickable Image">
+                    </a>
+                    <p>Connect with like-minded individuals.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Bharat Club is a platform that brings together enthusiasts from diverse fields to share knowledge,
+                stories, and experiences.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Bharat Club. All rights reserved.</p>
+        </div>
+    </footer>
+    {% endblock %}
+</body>
+
+</html>
